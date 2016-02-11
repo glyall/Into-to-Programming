@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Second Web Page
+      </title>
+      <script type="text/javascript">
+         function btnHello_click() {
+            // Single line comment
+            //alert("Hello, world.");  // Alan hates the alert function. DO not use it.
+            /*
+               Block comment               
+            */
+			 //(document.getElementById("taMain").value = "Hello, world");
+			var favoritenumber = 42;
+			var favoritenumber = "greg";
+			document.getElementById("taMain").value=favoritenumber;
+			
+		 }          
+      </script>
+      <style>
+         .footer {color: purple; font-weight: bold;}
+      </style>
+   </head>
+   <body>
+      <h1>
+          Some of my favorite things
+          <!-- 
+             Comments go here.
+          -->
+      </h1>
+      
+      <ol>
+         <li>item 1</li>         
+         <li>item 2</li>
+         <li>item 3</li>                           
+      </ol>
+
+      <ul>
+         <li>item 1</li>         
+         <li>item 2</li>
+         <li>item 3</li>                           
+      </ul>
+
+      <textarea 
+				rows="5" 
+				cols="32"
+				id="taMain"
+				name="taMain">It's a nice day outside cold and humid.
+      </textarea>
+
+      <br />
+      
+      <input type="button"
+             id = "btnHello"
+             name="btnHello"
+             value="Click Me" 
+             onclick="btnHello_click();" />
+             
+      <p class="footer">
+         a Glyall product
+      </p>
+   </body>
+</html>  

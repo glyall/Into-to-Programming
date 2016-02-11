@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Alternation with Nested IFs
+      </title>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <script type="text/javascript">
+         function one() {
+		 var favoriteNumber = 1337;
+		 alert (favoriteNumber); 
+		 }
+		 
+		 function two()		 { 
+		 var favoriteNumber = 12.12
+		 alert (favoriteNumber); 
+		 } 
+		 
+		 function three(favNum) {
+			
+			alert(favNum); 
+			}
+		 
+		 function btnGo_click() { 
+		 var favoriteNumber = 8675390; 
+		 one(); 
+		 two();
+		 three(favoriteNumber);
+		 }
+      </script>
+   </head>
+   <body>
+      
+       Command:
+       
+       <input type="text" 
+              id = "txtCommand"
+              name="txtCommand">
+
+       <input type="button"
+              value="Go" 
+              onclick="btnGo_click();" />             
+              
+   </body>
+</html>

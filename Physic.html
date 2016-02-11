@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+        How you doing???
+      </title>
+            <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <script type="text/javascript">
+      
+      function ifTest(){
+    
+    
+      
+      var txtcommandElement=document.getElementById ("txtcommand");
+      var usercommand=txtcommandElement.value; 
+      var targettextarea=document.getElementById ("taMain");
+      if (usercommand ==="Hello"|| usercommand ==="Good morning") {
+        targettextarea.value += "how are you? \n\n"} 
+        else if(usercommand ==="I am fine"){ 
+          targettextarea.value += "Really?????? \n\n"}
+          else if(usercommand==="yea"){
+            targettextarea.value+="that is good \n\n"
+            }
+            else if(usercommand==="got to go" || usercommand==="got to run"){ 
+              targettextarea.value+="alright catch you later \n\n"}
+           else {targettextarea.value +="????\n\n"
+   
+       }
+       }
+     </script>
+      
+   
+   
+   
+   </head>
+   <body>
+   
+   
+    <input type="button"
+             value="Enter" 
+             onclick="ifTest()" />             
+    
+    
+    
+    
+    <input type="text"
+            id="txtcommand"
+            name="txtcommand();"  />
+            
+
+       <br>
+       <br>
+
+       <textarea rows="10" cols="50" id="taMain"></textarea>
+   
+   <br>
+   
+     
+            
+            
+     
+
+      <br />
+      
+      
+             
+   </body>
+</html>
